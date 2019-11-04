@@ -8,6 +8,17 @@
     font-style: normal;
 }
 
+.imgcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.imgcontainer img {
+  width: 46%;
+}
+
 @font-face {
     font-family: 'MyriadPro';
     src: url('./fonts/b7dea71a-f8e7-42e0-b03b-ae1b0b6eb0cd.eot?#iefix');
@@ -8323,7 +8334,8 @@ html.mm-opening .mm-menu.mm-offcanvas.mm-next {
 
 #page-header {
     border-top: 0;
-    background-color: #aa8c6c;
+    background: url(../images/flag.jpg);
+    background-size: 100% 100%;
 }
 
 .logo-header {
@@ -8590,7 +8602,7 @@ a.disruptor-header::after,
     left: 0px;
     right: 0px;
     height: 3px;
-    background-color: #003222;
+    background-color: white;
     -webkit-transition: background 0s 0.3s;
     transition: background 0s 0.3s;
 }
@@ -8602,7 +8614,7 @@ a.disruptor-header::after,
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #003222;
+    background-color: white;
     content: "";
     -webkit-transition-duration: 0.2s, 0.2s;
     transition-duration: 0.2s, 0.2s;
@@ -8736,6 +8748,7 @@ a.disruptor-header::after,
         margin-top: 45px;
     }
     #mm-page-navigation .navigation-level-1 {
+        display: block;
         padding-bottom: 30px;
     }
     #mm-page-navigation .navigation-level-2,
@@ -8795,6 +8808,10 @@ a.disruptor-header::after,
         margin-right: 12px;
         margin-bottom: 0;
         position: relative;
+    }
+
+    .navigation-default .navigation-level-1 > .menue-item .sub {
+      color: white !important;
     }
     .navigation-default .navigation-level-1 > .menue-item .menu-more {
         float: right;
@@ -8864,12 +8881,15 @@ a.disruptor-header::after,
     .navigation-default .navigation-level-2-inner-wrapper {
         position: relative;
         background-color: transparent;
+        display: flex;
+        justify-content: center;
     }
     .navigation-default .navigation-level-2-inner-wrapper.row {
         margin: 0 0;
     }
     .navigation-default .navigation-level-2-inner-wrapper > .col-lg-4 {
         width: 370px;
+        background: white !important;
     }
     .navigation-default .menue-item:hover .navigation-level-2-wrapper,
     .navigation-default .menue-item.hover .navigation-level-2-wrapper {
@@ -8896,6 +8916,7 @@ a.disruptor-header::after,
         content: "";
         display: table;
         clear: both;
+        display: none !important;
     }
     .navigation-default .navigation-level-1 .has-description .navigation-level-2-wrapper.has-4th-level .nav-level-4 {
         display: block;
