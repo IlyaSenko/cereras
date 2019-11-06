@@ -8,6 +8,22 @@
     font-style: normal;
 }
 
+.head-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width:991px) {
+  .head-wrapper {
+    display: none;
+  }
+}
+
+.name {
+  color: white;
+}
+
 .imgcontainer {
   display: flex;
   justify-content: space-evenly;
@@ -8334,7 +8350,7 @@ html.mm-opening .mm-menu.mm-offcanvas.mm-next {
 
 #page-header {
     border-top: 0;
-    background: url(../images/flag.jpg);
+    background: url(../images/mainflag.jpg);
     background-size: 100% 100%;
 }
 
@@ -8342,7 +8358,6 @@ html.mm-opening .mm-menu.mm-offcanvas.mm-next {
     display: block;
     width: 130px;
     height: auto;
-    margin: 0 auto;
     padding: 17px 0 0 0;
 }
 
